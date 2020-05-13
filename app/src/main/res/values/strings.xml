@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Contacts Lab</string>
+    <string name="contact_firstName">FirstName</string>
+    <string name="contact_lastName">LastName</string>
+    <string name="contact_phone">Phone</string>
+    <string name="contact_email">Email</string>
+
+    <string name="new_contact">New Contact</string>
+    <string name="save_changes">Save</string>
+    <string name="delete_contact">Save</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$d Contacts</string>
+</resources>

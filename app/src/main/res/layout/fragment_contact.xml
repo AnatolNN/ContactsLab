@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/contact_firstName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/contact_firstName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_firstName"
+        app:layout_constraintStart_toEndOf="@+id/textView_firstName"
+        app:layout_constraintTop_toTopOf="@+id/textView_firstName"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textView_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/contact_lastName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_firstName" />
+
+    <EditText
+        android:id="@+id/editText_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/contact_lastName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_lastName"
+        app:layout_constraintStart_toStartOf="@+id/editText_firstName"
+        app:layout_constraintTop_toTopOf="@+id/textView_lastName"
+        android:importantForAutofill="no"/>
+
+    <TextView
+        android:id="@+id/textView_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/contact_phone"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_lastName" />
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/contact_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_phone"
+        app:layout_constraintStart_toStartOf="@+id/editText_lastName"
+        app:layout_constraintTop_toTopOf="@+id/textView_phone"
+        android:importantForAutofill="no"/>
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/contact_email"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_phone" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/contact_email"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_email"
+        app:layout_constraintStart_toStartOf="@+id/editText_phone"
+        app:layout_constraintTop_toTopOf="@+id/textView_email"
+        android:importantForAutofill="no"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
