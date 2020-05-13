@@ -1,3 +1,3 @@
 # ContactsLab
 Contacts Application
-ContactsLab.gif
+![](ContactsLab.gif)
